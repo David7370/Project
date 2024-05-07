@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+Button{
+    box-shadow: inset 0px 1px 1px rgba(8, 4, 4, 0.7);
+    border: 1px solid rgb(11, 1, 1);
+    border-radius: 18% 18% 10px 10px;
+    cursor: pointer;
+}
+
+div{
+    box-shadow: inset 0px 1px 1px rgba(49, 48, 48, 0.7);
+    border: 1px solid rgb(105, 99, 99);
+    border-radius: 1% 1% 1px 1px;
+    background-color: purple;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.dog-image {
+    position: absolute;
+    width: 100px; 
+    height: auto;
+    z-index: 9999; 
+}
+
+@media only screen and (max-width: 768px) {
+    .dog-image {
+        width: 100px;  
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .dog-image {
+        width: 80px; 
+    }
+}
